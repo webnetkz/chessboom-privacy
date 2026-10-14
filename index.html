@@ -1,0 +1,301 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ChessBoom — Политика конфиденциальности</title>
+<meta name="description" content="ChessBoom collects no personal data. Privacy policy for com.appswebnetkz.chessboom.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400&display=swap">
+<style>
+  /* Layout: one reading column, max 64ch, with a hairline rule marking each
+     section — a document about a program, set like a technical note. */
+  :root {
+    --paper:      #f7f5f1;
+    --ink:        #1b1a18;
+    --ink-soft:   #595650;
+    --rule:       #ddd8cf;
+    --amber:      #8a5a1e;
+    --panel:      #efece6;
+
+    --display: "Newsreader", Georgia, "Times New Roman", serif;
+    --body:    "IBM Plex Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
+    --mono:    "IBM Plex Mono", ui-monospace, "SF Mono", Menlo, monospace;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --paper:    #121214;
+      --ink:      #e9e6e0;
+      --ink-soft: #9b968d;
+      --rule:     #2d2c2f;
+      --amber:    #e0a868;
+      --panel:    #1a1a1d;
+      color-scheme: dark;
+    }
+  }
+  :root[data-theme="dark"] {
+    --paper:    #121214;
+    --ink:      #e9e6e0;
+    --ink-soft: #9b968d;
+    --rule:     #2d2c2f;
+    --amber:    #e0a868;
+    --panel:    #1a1a1d;
+    color-scheme: dark;
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    margin: 0;
+    background: var(--paper);
+    color: var(--ink);
+    font-family: var(--body);
+    font-size: 16px;
+    line-height: 1.65;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .wrap {
+    max-width: 41rem;
+    margin-inline: auto;
+    padding-inline: 20px;
+    padding-block: clamp(2.5rem, 7vw, 5rem) 4rem;
+  }
+
+  header { margin-bottom: 3rem; }
+
+  .eyebrow {
+    font-size: 0.72rem;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--ink-soft);
+    margin: 0 0 0.9rem;
+  }
+
+  h1 {
+    font-family: var(--display);
+    font-weight: 400;
+    font-size: clamp(2rem, 6vw, 2.9rem);
+    line-height: 1.12;
+    letter-spacing: -0.015em;
+    text-wrap: balance;
+    margin: 0 0 1rem;
+  }
+
+  .standfirst {
+    font-family: var(--display);
+    font-size: 1.1rem;
+    font-style: italic;
+    color: var(--ink-soft);
+    margin: 0 0 1.75rem;
+    text-wrap: pretty;
+  }
+
+  .meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem 1.5rem;
+    font-size: 0.82rem;
+    color: var(--ink-soft);
+    padding-top: 1.1rem;
+    border-top: 1px solid var(--rule);
+  }
+  .meta b { color: var(--ink); font-weight: 500; }
+
+  section { margin-top: 2.75rem; }
+
+  h2 {
+    font-family: var(--display);
+    font-weight: 500;
+    font-size: 1.35rem;
+    line-height: 1.25;
+    letter-spacing: -0.01em;
+    text-wrap: balance;
+    margin: 0 0 0.3rem;
+    padding-top: 1.4rem;
+    border-top: 1px solid var(--rule);
+  }
+
+  h3 {
+    font-size: 0.9rem;
+    font-weight: 600;
+    letter-spacing: 0.02em;
+    margin: 1.75rem 0 0.35rem;
+  }
+
+  p { margin: 0 0 1rem; }
+  p:last-child { margin-bottom: 0; }
+
+  ul { margin: 0 0 1rem; padding-left: 1.15rem; }
+  li { margin-bottom: 0.45rem; }
+  li::marker { color: var(--amber); }
+
+  code {
+    font-family: var(--mono);
+    font-size: 0.86em;
+    background: var(--panel);
+    padding: 0.12em 0.4em;
+    border-radius: 3px;
+    word-break: break-word;
+  }
+
+  .callout {
+    background: var(--panel);
+    border-left: 2px solid var(--amber);
+    padding: 1rem 1.1rem;
+    margin: 1.5rem 0;
+    font-size: 0.95rem;
+  }
+  .callout p:last-child { margin-bottom: 0; }
+
+  a { color: var(--amber); text-underline-offset: 2px; }
+  a:focus-visible,
+  .lang a:focus-visible {
+    outline: 2px solid var(--amber);
+    outline-offset: 3px;
+    border-radius: 2px;
+  }
+
+  .lang {
+    display: flex;
+    gap: 1rem;
+    font-size: 0.82rem;
+    margin-bottom: 2rem;
+  }
+
+  .contact {
+    font-family: var(--mono);
+    font-size: 0.95rem;
+    background: var(--panel);
+    padding: 0.85rem 1rem;
+    border-radius: 4px;
+    display: inline-block;
+    max-width: 100%;
+    overflow-wrap: break-word;
+  }
+
+  footer {
+    margin-top: 3.5rem;
+    padding-top: 1.4rem;
+    border-top: 1px solid var(--rule);
+    font-size: 0.82rem;
+    color: var(--ink-soft);
+  }
+</style>
+</head>
+<body>
+
+<div class="wrap">
+
+  <header>
+    <p class="eyebrow">appswebnetkz</p>
+    <h1>Политика конфиденциальности ChessBoom</h1>
+    <p class="standfirst">Приложение не собирает, не передаёт и не хранит никаких персональных данных. Ниже — что именно это значит и чем это подтверждается.</p>
+    <div class="meta">
+      <span><b>Приложение:</b> ChessBoom</span>
+      <span><b>Пакет:</b> <code>com.appswebnetkz.chessboom</code></span>
+      <span><b>Версия политики:</b> 12 октября 2026 г.</span>
+    </div>
+  </header>
+
+  <nav class="lang" aria-label="Язык">
+    <a href="#ru" aria-current="true">Русский</a>
+    <a href="#en">English</a>
+  </nav>
+
+  <main id="ru">
+
+    <section>
+      <h2>Какие данные собираются</h2>
+      <p><b>Никакие.</b> ChessBoom не собирает персональные данные, не создаёт учётных записей, не использует аналитику, рекламные сети и идентификаторы пользователя. В приложении нет регистрации, входа и профиля.</p>
+      <div class="callout">
+        <p>В коде приложения полностью отсутствует сетевой слой: нет HTTP-клиента, нет сокетов, нет telemetry-библиотек. Приложение не может передать данные куда-либо, потому что ему нечем это сделать.</p>
+      </div>
+    </section>
+
+    <section>
+      <h2>Разрешения</h2>
+      <p>ChessBoom не запрашивает ни одного разрешения Android. В манифесте приложения нет ни одной записи <code>uses-permission</code> — ни доступа к интернету, ни к хранилищу, ни к камере, микрофону, контактам или местоположению.</p>
+    </section>
+
+    <section>
+      <h2>Что приложение записывает на устройство</h2>
+      <p>Единственный файл, который создаёт ChessBoom, — журнал запуска во внутреннем каталоге приложения. Он нужен, чтобы при сбое было видно, на каком шаге игра остановилась.</p>
+      <p>В журнале содержится:</p>
+      <ul>
+        <li>версия игры и время запуска;</li>
+        <li>названия пройденных этапов инициализации;</li>
+        <li>название графического адаптера и версия драйвера, сообщённые системой;</li>
+        <li>текст ошибки, если приложение аварийно завершилось.</li>
+      </ul>
+      <p>В журнале нет ничего, что относилось бы к вам: ни идентификаторов устройства, ни учётных данных, ни содержимого ваших файлов. Файл лежит в приватном каталоге приложения, недоступном другим приложениям, никуда не отправляется и удаляется вместе с приложением при его удалении.</p>
+    </section>
+
+    <section>
+      <h2>Шахматный движок</h2>
+      <p>Соперника считает Stockfish — свободный шахматный движок с открытым исходным кодом, распространяемый по лицензии GPL‑3. Он поставляется внутри приложения и работает как отдельный процесс на вашем устройстве. Обмен с ним идёт по локальному каналу в текстовом протоколе UCI и состоит из позиций на доске и ходов. Ни одна позиция и ни один ход не покидают устройство.</p>
+    </section>
+
+    <section>
+      <h2>Дети</h2>
+      <p>Игра подходит для любого возраста и не содержит материалов, не предназначенных для детей. Поскольку приложение не собирает данные ни у кого, оно не собирает их и у детей.</p>
+    </section>
+
+    <section>
+      <h2>Данные, которые собирает сам Google Play</h2>
+      <p>Это честно отметить отдельно: установка, обновление и отчёты о сбоях обрабатываются магазином Google Play, а не приложением. Эти сведения собирает Google в соответствии со своей <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">политикой конфиденциальности</a>, и разработчик ChessBoom на этот процесс не влияет и доступа к персональным данным через него не получает.</p>
+    </section>
+
+    <section>
+      <h2>Изменения</h2>
+      <p>Если приложение когда-либо получит сетевые функции, сохранение настроек в облаке или аналитику, эта политика будет переписана до выпуска такой версии, а дата вверху страницы обновлена. Действующей считается версия, опубликованная по этому адресу.</p>
+    </section>
+
+    <section>
+      <h2>Контакты</h2>
+      <p>Вопросы по этой политике и по приложению:</p>
+      <p class="contact">apps.webnetkz2@gmail.com</p>
+    </section>
+
+  </main>
+
+  <main id="en">
+
+    <section>
+      <h2>English version</h2>
+      <p><b>ChessBoom collects no personal data of any kind.</b> There are no accounts, no analytics, no advertising networks and no user identifiers. There is no sign-up, no sign-in and no profile.</p>
+      <p>The application contains no networking layer at all — no HTTP client, no sockets, no telemetry library. It cannot transmit data anywhere because it has no means to.</p>
+
+      <h3>Permissions</h3>
+      <p>ChessBoom requests no Android permissions. Its manifest declares no <code>uses-permission</code> entry — no internet, storage, camera, microphone, contacts or location access.</p>
+
+      <h3>What is written to the device</h3>
+      <p>The only file ChessBoom creates is a launch log in its own private application directory, so that a failure shows which step did not complete. It records the game version and launch time, the initialisation milestones reached, the graphics adapter name and driver version reported by the system, and the error text if the application terminated abnormally. It contains no device identifiers, no credentials and no contents of your files. It never leaves the device and is removed when the application is uninstalled.</p>
+
+      <h3>Chess engine</h3>
+      <p>The opponent is Stockfish, a free and open-source chess engine distributed under the GPL‑3 licence. It ships inside the application and runs as a separate process on your device. Communication uses the text-based UCI protocol over a local pipe and consists of board positions and moves. No position and no move leaves the device.</p>
+
+      <h3>Children</h3>
+      <p>The game is suitable for all ages and contains nothing unsuitable for children. As the application collects no data from anyone, it collects none from children.</p>
+
+      <h3>Data collected by Google Play itself</h3>
+      <p>Installation, updates and crash reporting are handled by the Google Play Store rather than by the application. That information is collected by Google under its own <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">privacy policy</a>; the developer of ChessBoom neither controls that process nor obtains personal data through it.</p>
+
+      <h3>Changes</h3>
+      <p>Should the application ever gain networking, cloud-synchronised settings or analytics, this policy will be rewritten before that version is released and the date at the top of this page updated. The version published at this address is the one in force.</p>
+
+      <h3>Contact</h3>
+      <p class="contact">apps.webnetkz2@gmail.com</p>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>ChessBoom · <code>com.appswebnetkz.chessboom</code> · appswebnetkz · Политика действует с 12 октября 2026 г.</p>
+  </footer>
+
+</div>
+
+</body>
+</html>
